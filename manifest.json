@@ -1,0 +1,25 @@
+{
+    "manifest_version": 2,
+    "name": "Relax-n-Load",
+    "description": "Provides background music while you wait for pages to load in Google Chrome.",
+    "version": "1.0",
+    "browser_action": {
+        "default_icon": "icon.png"
+    },
+    "permissions": [
+        "tabs",
+        "background",
+        "webNavigation",
+        "http://*/*",
+        "https://*/*"
+    ],
+    "web_accessible_resources": [
+        "music.mp3"
+    ],
+    "background": {
+        "scripts": [
+            "main.js"
+        ],
+        "persistent": false
+    }
+}
